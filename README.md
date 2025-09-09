@@ -1,7 +1,7 @@
 # Prediction-Powered-Inference
 Estimating the fraction of the Amazon rainforest lost between 2000 and 2015
 
-## Acknowledgment
+## Credits
 
 This project builds on the framework introduced in the paper:
 
@@ -9,6 +9,13 @@ This project builds on the framework introduced in the paper:
 Anastasios N. Angelopoulos, Stephen Bates, Clara Fannjiang, Michael I. Jordan, and Tijana Žrnić  
 *arXiv preprint arXiv:2301.09633, 2023*  
 📄 [Read the paper](https://arxiv.org/abs/2301.09633)
+
+Specifically, the following files were adapted or reused from the authors' official repository:
+- `forest.ipynb`
+- `utils.py`
+- `forest.npz`
+
+All credit for these resources goes to the original authors.  
 
 ## Setup
 
