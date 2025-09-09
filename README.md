@@ -97,3 +97,35 @@ Goal: Find the smallest labeled sample size \(n\) required for **80% power** to 
 ### ✅ Summary  
 By incorporating predictions from the large, inexpensive dataset, **Prediction-Powered Inference (PPI)** achieves the same level of statistical confidence with fewer labeled data points than the Classical method.  
 This makes PPI a more **efficient** and **cost-effective** approach for monitoring Amazon deforestation.  
+
+
+# Limitations of Prediction-Powered Inference (PPI)
+
+1. **Dependence on Model Accuracy**  
+   - PPI relies heavily on the predictive model used to augment inference.  
+   - If the model is poorly calibrated or biased, the inference results can be misleading.
+
+2. **Assumption of Exchangeability**  
+   - PPI often assumes that labeled and unlabeled data come from the same distribution.  
+   - Violations (e.g., domain shift) can reduce validity.
+
+3. **Label Scarcity Issues**  
+   - While PPI is designed for limited labeled data, having too few labels can lead to unstable corrections and wide confidence intervals.
+
+4. **Complex Error Propagation**  
+   - Errors in model predictions propagate through the inference process, making interpretation more challenging.  
+
+5. **Computational Complexity**  
+   - Requires both fitting a predictive model and performing statistical corrections, which may be computationally intensive on large datasets.
+
+6. **Sensitivity to Model Misspecification**  
+   - If the predictive model fails to capture important relationships, the efficiency gains of PPI diminish significantly.
+
+7. **Limited Applicability**  
+   - Best suited for supervised learning contexts with a mix of labeled and unlabeled data.  
+   - Not always generalizable to unsupervised or reinforcement learning settings.
+
+8. **Interpretability Challenges**  
+   - The statistical corrections can make inference results harder to explain to non-technical stakeholders.
+
+
